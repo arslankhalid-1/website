@@ -122,6 +122,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-submit-button-title": "Submit"
   }
 }</script>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,700;0,800;1,400;1,700&amp;family=Spectral:ital,wght@0,500;0,800;1,500;1,800&amp;family=Ubuntu+Mono&amp;display=swap" rel="stylesheet">
 
 
 <meta name="twitter:title" content="Arslan Khalid - Lab 01 &amp; Lab 02">
@@ -258,7 +259,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lab-01" id="toc-lab-01" class="nav-link active" data-scroll-target="#lab-01">LAB 01</a>
+  <li><a href="#lab-01" id="toc-lab-01" class="nav-link active" data-scroll-target="#lab-01"><strong>LAB 01</strong></a>
   <ul class="collapse">
   <li><a href="#basic-commands" id="toc-basic-commands" class="nav-link" data-scroll-target="#basic-commands">Basic Commands</a></li>
   <li><a href="#create-object-using-the-assignment-operator--" id="toc-create-object-using-the-assignment-operator--" class="nav-link" data-scroll-target="#create-object-using-the-assignment-operator--">Create object using the assignment operator (&lt;-, =)</a></li>
@@ -268,7 +269,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#simple-descriptive-statistics" id="toc-simple-descriptive-statistics" class="nav-link" data-scroll-target="#simple-descriptive-statistics">Simple descriptive statistics</a></li>
   </ul></li>
   <li><a href="#graphics-using-r-graphics-without-packages" id="toc-graphics-using-r-graphics-without-packages" class="nav-link" data-scroll-target="#graphics-using-r-graphics-without-packages">Graphics using R Graphics (without packages)</a></li>
-  <li><a href="#lab-02" id="toc-lab-02" class="nav-link" data-scroll-target="#lab-02">LAB 02</a>
+  <li><a href="#lab-02" id="toc-lab-02" class="nav-link" data-scroll-target="#lab-02"><strong>LAB 02</strong></a>
   <ul class="collapse">
   <li><a href="#r-programmng-basic-commands" id="toc-r-programmng-basic-commands" class="nav-link" data-scroll-target="#r-programmng-basic-commands">R Programmng Basic Commands</a></li>
   <li><a href="#indexing-data-using" id="toc-indexing-data-using" class="nav-link" data-scroll-target="#indexing-data-using">Indexing Data using []</a></li>
@@ -289,7 +290,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title d-none d-lg-block">Lab 01 &amp; Lab 02</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i></button></div></div>
+<div class="quarto-title-block"><div><h1 class="title d-none d-lg-block">Lab 01 &amp; Lab 02</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> code</button></div></div>
 </div>
 
 
@@ -305,7 +306,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </header>
 
 <section id="lab-01" class="level2">
-<h2 class="anchored" data-anchor-id="lab-01">LAB 01</h2>
+<h2 class="anchored" data-anchor-id="lab-01"><strong>LAB 01</strong></h2>
 <section id="basic-commands" class="level3">
 <h3 class="anchored" data-anchor-id="basic-commands">Basic Commands</h3>
 </section>
@@ -431,7 +432,7 @@ Note:
 <span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="fu">cor</span>(x,y) <span class="co"># Correlation of x and y</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.9952925</code></pre>
+<pre><code>[1] 0.9957348</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1303</span>) <span class="co"># Set the seed for Random Number Generator (RNG) to generate values that are reproducible.</span></span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -512,7 +513,8 @@ Note:
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y,<span class="at">pch =</span> <span class="dv">20</span>, <span class="at">col =</span> <span class="st">"forestgreen"</span>) <span class="co"># Try different colors</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">bg =</span> <span class="st">"#FCFCF6"</span>)</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y,<span class="at">pch =</span> <span class="dv">20</span>, <span class="at">col =</span> <span class="st">"forestgreen"</span>) <span class="co"># Try different colors</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="assign_02_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
 </div>
@@ -561,7 +563,7 @@ Note:
 </div>
 </section>
 <section id="lab-02" class="level2">
-<h2 class="anchored" data-anchor-id="lab-02">LAB 02</h2>
+<h2 class="anchored" data-anchor-id="lab-02"><strong>LAB 02</strong></h2>
 <section id="r-programmng-basic-commands" class="level3">
 <h3 class="anchored" data-anchor-id="r-programmng-basic-commands">R Programmng Basic Commands</h3>
 <p>(Adapted from ISLR Chapter 3 Lab: Introduction to R)</p>
@@ -768,7 +770,7 @@ Note:
 <div class="cell-output cell-output-stdout">
 <pre><code>
 The downloaded binary packages are in
-    /var/folders/md/xwgy73f942v77n3vlc1ydy9w0000gn/T//RtmpPTYozb/downloaded_packages</code></pre>
+    /var/folders/md/xwgy73f942v77n3vlc1ydy9w0000gn/T//RtmpMU9xiH/downloaded_packages</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb101"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb101-1"><a href="#cb101-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lapply</span>(ptbu, require, <span class="at">character.only =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
@@ -1072,7 +1074,8 @@ Model 2: medv ~ lstat + I(lstat^2)
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb149"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb149-1"><a href="#cb149-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">2</span>))</span>
-<span id="cb149-2"><a href="#cb149-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(lm.fit2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb149-2"><a href="#cb149-2" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">bg =</span> <span class="st">"#FCFCF6"</span>)</span>
+<span id="cb149-3"><a href="#cb149-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(lm.fit2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="assign_02_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid" width="672"></p>
 </div>
@@ -1416,7 +1419,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb162-4"><a href="#cb162-4" aria-hidden="true" tabindex="-1"></a><span class="an">editor:</span><span class="co"> visual</span></span>
 <span id="cb162-5"><a href="#cb162-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb162-6"><a href="#cb162-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-7"><a href="#cb162-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## LAB 01</span></span>
+<span id="cb162-7"><a href="#cb162-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## **LAB 01**</span></span>
 <span id="cb162-8"><a href="#cb162-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb162-9"><a href="#cb162-9" aria-hidden="true" tabindex="-1"></a><span class="fu">### Basic Commands</span></span>
 <span id="cb162-10"><a href="#cb162-10" aria-hidden="true" tabindex="-1"></a></span>
@@ -1536,192 +1539,194 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb162-138"><a href="#cb162-138" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb162-139"><a href="#cb162-139" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb162-142"><a href="#cb162-142" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb162-143"><a href="#cb162-143" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y,<span class="at">pch =</span> <span class="dv">20</span>, <span class="at">col =</span> <span class="st">"forestgreen"</span>) <span class="co"># Try different colors</span></span>
-<span id="cb162-144"><a href="#cb162-144" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y,<span class="at">pch =</span> <span class="dv">20</span>, <span class="at">col =</span> <span class="st">"indianred3"</span>) </span>
-<span id="cb162-145"><a href="#cb162-145" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y,<span class="at">pch =</span> <span class="dv">20</span>, <span class="at">col =</span> <span class="st">"paleturquoise3"</span>) </span>
-<span id="cb162-146"><a href="#cb162-146" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y,<span class="at">pch =</span> <span class="dv">20</span>, <span class="at">col =</span> <span class="st">"plum4"</span>) </span>
-<span id="cb162-147"><a href="#cb162-147" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-148"><a href="#cb162-148" aria-hidden="true" tabindex="-1"></a><span class="co">#dev.off() # Close the file using the dev.off function</span></span>
-<span id="cb162-149"><a href="#cb162-149" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-150"><a href="#cb162-150" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">bg =</span> <span class="st">"#FCFCF6"</span>)</span>
-<span id="cb162-151"><a href="#cb162-151" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-152"><a href="#cb162-152" aria-hidden="true" tabindex="-1"></a>x1 <span class="ot">=</span> <span class="fu">seq</span>(<span class="dv">1</span>,<span class="dv">10</span>) <span class="co"># Same as x=c(1:10)</span></span>
-<span id="cb162-153"><a href="#cb162-153" aria-hidden="true" tabindex="-1"></a>x1</span>
-<span id="cb162-154"><a href="#cb162-154" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-155"><a href="#cb162-155" aria-hidden="true" tabindex="-1"></a>x2 <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span>
-<span id="cb162-156"><a href="#cb162-156" aria-hidden="true" tabindex="-1"></a>x2</span>
-<span id="cb162-157"><a href="#cb162-157" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-158"><a href="#cb162-158" aria-hidden="true" tabindex="-1"></a><span class="co"># x1 and x2 are the same</span></span>
-<span id="cb162-159"><a href="#cb162-159" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-160"><a href="#cb162-160" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="fu">seq</span>(<span class="sc">-</span>pi,pi,<span class="at">length =</span> <span class="dv">50</span>)</span>
-<span id="cb162-161"><a href="#cb162-161" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> x</span>
-<span id="cb162-162"><a href="#cb162-162" aria-hidden="true" tabindex="-1"></a>y</span>
-<span id="cb162-163"><a href="#cb162-163" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb162-164"><a href="#cb162-164" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-165"><a href="#cb162-165" aria-hidden="true" tabindex="-1"></a><span class="fu">## LAB 02</span></span>
-<span id="cb162-166"><a href="#cb162-166" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-167"><a href="#cb162-167" aria-hidden="true" tabindex="-1"></a><span class="fu">### R Programmng Basic Commands</span></span>
-<span id="cb162-168"><a href="#cb162-168" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-169"><a href="#cb162-169" aria-hidden="true" tabindex="-1"></a>(Adapted from ISLR Chapter 3 Lab: Introduction to R)</span>
-<span id="cb162-170"><a href="#cb162-170" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-171"><a href="#cb162-171" aria-hidden="true" tabindex="-1"></a><span class="fu">### Indexing Data using \[\]</span></span>
-<span id="cb162-172"><a href="#cb162-172" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-175"><a href="#cb162-175" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb162-176"><a href="#cb162-176" aria-hidden="true" tabindex="-1"></a>A<span class="ot">=</span><span class="fu">matrix</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">16</span>,<span class="dv">4</span>,<span class="dv">4</span>)</span>
-<span id="cb162-177"><a href="#cb162-177" aria-hidden="true" tabindex="-1"></a>A</span>
-<span id="cb162-178"><a href="#cb162-178" aria-hidden="true" tabindex="-1"></a>A[<span class="dv">2</span>,<span class="dv">3</span>]</span>
-<span id="cb162-179"><a href="#cb162-179" aria-hidden="true" tabindex="-1"></a>A[<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>),<span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">4</span>)]</span>
-<span id="cb162-180"><a href="#cb162-180" aria-hidden="true" tabindex="-1"></a>A[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>,<span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>]</span>
-<span id="cb162-181"><a href="#cb162-181" aria-hidden="true" tabindex="-1"></a>A[<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,]</span>
-<span id="cb162-182"><a href="#cb162-182" aria-hidden="true" tabindex="-1"></a>A[,<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>]</span>
-<span id="cb162-183"><a href="#cb162-183" aria-hidden="true" tabindex="-1"></a>A[<span class="dv">1</span>,]</span>
-<span id="cb162-184"><a href="#cb162-184" aria-hidden="true" tabindex="-1"></a>A[<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>),]</span>
-<span id="cb162-185"><a href="#cb162-185" aria-hidden="true" tabindex="-1"></a>A[<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>),<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">4</span>)]</span>
-<span id="cb162-186"><a href="#cb162-186" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(A)</span>
-<span id="cb162-187"><a href="#cb162-187" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb162-188"><a href="#cb162-188" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-189"><a href="#cb162-189" aria-hidden="true" tabindex="-1"></a><span class="fu">### Loading Data from GitHub</span></span>
-<span id="cb162-190"><a href="#cb162-190" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-193"><a href="#cb162-193" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb162-194"><a href="#cb162-194" aria-hidden="true" tabindex="-1"></a>Auto<span class="ot">=</span><span class="fu">read.table</span>(<span class="st">"https://raw.githubusercontent.com/karlho/knowledgemining/gh-pages/data/Auto.data"</span>)</span>
-<span id="cb162-195"><a href="#cb162-195" aria-hidden="true" tabindex="-1"></a><span class="co"># fix(Auto) # Starting the X11 R data editor</span></span>
-<span id="cb162-196"><a href="#cb162-196" aria-hidden="true" tabindex="-1"></a>Auto<span class="ot">=</span><span class="fu">read.table</span>(<span class="st">"https://raw.githubusercontent.com/karlho/knowledgemining/gh-pages/data/Auto.data"</span>,<span class="at">header=</span>T,<span class="at">na.strings=</span><span class="st">"?"</span>)</span>
-<span id="cb162-197"><a href="#cb162-197" aria-hidden="true" tabindex="-1"></a><span class="co"># fix(Auto)</span></span>
-<span id="cb162-198"><a href="#cb162-198" aria-hidden="true" tabindex="-1"></a>Auto<span class="ot">=</span><span class="fu">read.csv</span>(<span class="st">"https://raw.githubusercontent.com/karlho/knowledgemining/gh-pages/data/Auto.csv"</span>,<span class="at">header=</span>T,<span class="at">na.strings=</span><span class="st">"?"</span>)</span>
-<span id="cb162-199"><a href="#cb162-199" aria-hidden="true" tabindex="-1"></a><span class="co"># fix(Auto)</span></span>
-<span id="cb162-200"><a href="#cb162-200" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(Auto)</span>
-<span id="cb162-201"><a href="#cb162-201" aria-hidden="true" tabindex="-1"></a>Auto[<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>,]</span>
-<span id="cb162-202"><a href="#cb162-202" aria-hidden="true" tabindex="-1"></a>Auto<span class="ot">=</span><span class="fu">na.omit</span>(Auto)</span>
-<span id="cb162-203"><a href="#cb162-203" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(Auto)</span>
-<span id="cb162-204"><a href="#cb162-204" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(Auto)</span>
-<span id="cb162-205"><a href="#cb162-205" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb162-206"><a href="#cb162-206" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-207"><a href="#cb162-207" aria-hidden="true" tabindex="-1"></a><span class="fu">### Load data from ISLR website</span></span>
-<span id="cb162-208"><a href="#cb162-208" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-209"><a href="#cb162-209" aria-hidden="true" tabindex="-1"></a><span class="in">```{r Loaddata_from_web}</span></span>
-<span id="cb162-210"><a href="#cb162-210" aria-hidden="true" tabindex="-1"></a>Auto<span class="ot">=</span><span class="fu">read.table</span>(<span class="st">"https://www.statlearning.com/s/Auto.data"</span>,<span class="at">header=</span>T,<span class="at">na.strings=</span><span class="st">"?"</span>)</span>
-<span id="cb162-211"><a href="#cb162-211" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(Auto)</span>
-<span id="cb162-212"><a href="#cb162-212" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb162-213"><a href="#cb162-213" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-214"><a href="#cb162-214" aria-hidden="true" tabindex="-1"></a><span class="fu">### Additional Graphical and Numerical Summaries</span></span>
-<span id="cb162-215"><a href="#cb162-215" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-218"><a href="#cb162-218" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb162-219"><a href="#cb162-219" aria-hidden="true" tabindex="-1"></a><span class="co"># plot(cylinders, mpg)</span></span>
-<span id="cb162-220"><a href="#cb162-220" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">bg =</span> <span class="st">"#FCFCF6"</span>)</span>
-<span id="cb162-221"><a href="#cb162-221" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(Auto<span class="sc">$</span>cylinders, Auto<span class="sc">$</span>mpg)</span>
-<span id="cb162-222"><a href="#cb162-222" aria-hidden="true" tabindex="-1"></a><span class="fu">attach</span>(Auto)</span>
-<span id="cb162-223"><a href="#cb162-223" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(cylinders, mpg)</span>
-<span id="cb162-224"><a href="#cb162-224" aria-hidden="true" tabindex="-1"></a>cylinders<span class="ot">=</span><span class="fu">as.factor</span>(cylinders)</span>
-<span id="cb162-225"><a href="#cb162-225" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(cylinders, mpg)</span>
-<span id="cb162-226"><a href="#cb162-226" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(cylinders, mpg, <span class="at">col=</span><span class="st">"red"</span>)</span>
-<span id="cb162-227"><a href="#cb162-227" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(cylinders, mpg, <span class="at">col=</span><span class="st">"red"</span>, <span class="at">varwidth=</span>T)</span>
-<span id="cb162-228"><a href="#cb162-228" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(cylinders, mpg, <span class="at">col=</span><span class="st">"red"</span>, <span class="at">varwidth=</span>T,<span class="at">horizontal=</span>T)</span>
-<span id="cb162-229"><a href="#cb162-229" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(cylinders, mpg, <span class="at">col=</span><span class="st">"red"</span>, <span class="at">varwidth=</span>T, <span class="at">xlab=</span><span class="st">"cylinders"</span>, <span class="at">ylab=</span><span class="st">"MPG"</span>)</span>
-<span id="cb162-230"><a href="#cb162-230" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(mpg)</span>
-<span id="cb162-231"><a href="#cb162-231" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(mpg,<span class="at">col=</span><span class="dv">2</span>)</span>
-<span id="cb162-232"><a href="#cb162-232" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(mpg,<span class="at">col=</span><span class="dv">2</span>,<span class="at">breaks=</span><span class="dv">15</span>)</span>
-<span id="cb162-233"><a href="#cb162-233" aria-hidden="true" tabindex="-1"></a><span class="co">#pairs(Auto)</span></span>
-<span id="cb162-234"><a href="#cb162-234" aria-hidden="true" tabindex="-1"></a><span class="fu">pairs</span>(<span class="sc">~</span> mpg <span class="sc">+</span> displacement <span class="sc">+</span> horsepower <span class="sc">+</span> weight <span class="sc">+</span> acceleration, Auto)</span>
-<span id="cb162-235"><a href="#cb162-235" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(horsepower,mpg)</span>
-<span id="cb162-236"><a href="#cb162-236" aria-hidden="true" tabindex="-1"></a><span class="co"># identify(horsepower,mpg,name) # Interactive: point and click the dot to identify cases</span></span>
-<span id="cb162-237"><a href="#cb162-237" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(Auto)</span>
-<span id="cb162-238"><a href="#cb162-238" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mpg)</span>
-<span id="cb162-239"><a href="#cb162-239" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb162-240"><a href="#cb162-240" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-241"><a href="#cb162-241" aria-hidden="true" tabindex="-1"></a><span class="fu">### Linear Regression</span></span>
-<span id="cb162-242"><a href="#cb162-242" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-245"><a href="#cb162-245" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb162-246"><a href="#cb162-246" aria-hidden="true" tabindex="-1"></a>ptbu<span class="ot">=</span><span class="fu">c</span>(<span class="st">"MASS"</span>,<span class="st">"ISLR"</span>)</span>
-<span id="cb162-247"><a href="#cb162-247" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(ptbu, <span class="at">repos=</span><span class="st">'http://cran.us.r-project.org'</span>)</span>
-<span id="cb162-248"><a href="#cb162-248" aria-hidden="true" tabindex="-1"></a><span class="fu">lapply</span>(ptbu, require, <span class="at">character.only =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb162-249"><a href="#cb162-249" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(MASS)</span>
-<span id="cb162-250"><a href="#cb162-250" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ISLR)</span>
-<span id="cb162-251"><a href="#cb162-251" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-252"><a href="#cb162-252" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">bg =</span> <span class="st">"#FCFCF6"</span>)</span>
-<span id="cb162-253"><a href="#cb162-253" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-254"><a href="#cb162-254" aria-hidden="true" tabindex="-1"></a><span class="co"># Simple Linear Regression</span></span>
-<span id="cb162-255"><a href="#cb162-255" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-256"><a href="#cb162-256" aria-hidden="true" tabindex="-1"></a><span class="co"># fix(Boston)</span></span>
-<span id="cb162-257"><a href="#cb162-257" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(Boston)</span>
-<span id="cb162-258"><a href="#cb162-258" aria-hidden="true" tabindex="-1"></a><span class="co"># lm.fit=lm(medv~lstat)</span></span>
-<span id="cb162-259"><a href="#cb162-259" aria-hidden="true" tabindex="-1"></a><span class="fu">attach</span>(Boston)</span>
-<span id="cb162-260"><a href="#cb162-260" aria-hidden="true" tabindex="-1"></a>lm.fit<span class="ot">=</span><span class="fu">lm</span>(medv<span class="sc">~</span>lstat,<span class="at">data=</span>Boston)</span>
-<span id="cb162-261"><a href="#cb162-261" aria-hidden="true" tabindex="-1"></a><span class="fu">attach</span>(Boston)</span>
-<span id="cb162-262"><a href="#cb162-262" aria-hidden="true" tabindex="-1"></a>lm.fit<span class="ot">=</span><span class="fu">lm</span>(medv<span class="sc">~</span>lstat)</span>
-<span id="cb162-263"><a href="#cb162-263" aria-hidden="true" tabindex="-1"></a>lm.fit</span>
-<span id="cb162-264"><a href="#cb162-264" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lm.fit)</span>
-<span id="cb162-265"><a href="#cb162-265" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(lm.fit)</span>
-<span id="cb162-266"><a href="#cb162-266" aria-hidden="true" tabindex="-1"></a><span class="fu">coef</span>(lm.fit)</span>
-<span id="cb162-267"><a href="#cb162-267" aria-hidden="true" tabindex="-1"></a><span class="fu">confint</span>(lm.fit)</span>
-<span id="cb162-268"><a href="#cb162-268" aria-hidden="true" tabindex="-1"></a><span class="fu">predict</span>(lm.fit,<span class="fu">data.frame</span>(<span class="at">lstat=</span>(<span class="fu">c</span>(<span class="dv">5</span>,<span class="dv">10</span>,<span class="dv">15</span>))), <span class="at">interval=</span><span class="st">"confidence"</span>)</span>
-<span id="cb162-269"><a href="#cb162-269" aria-hidden="true" tabindex="-1"></a><span class="fu">predict</span>(lm.fit,<span class="fu">data.frame</span>(<span class="at">lstat=</span>(<span class="fu">c</span>(<span class="dv">5</span>,<span class="dv">10</span>,<span class="dv">15</span>))), <span class="at">interval=</span><span class="st">"prediction"</span>)</span>
-<span id="cb162-270"><a href="#cb162-270" aria-hidden="true" tabindex="-1"></a><span class="co"># What is the differnce between "conference" and "prediction" difference?</span></span>
-<span id="cb162-271"><a href="#cb162-271" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-272"><a href="#cb162-272" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(lstat,medv)</span>
-<span id="cb162-273"><a href="#cb162-273" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(lm.fit)</span>
-<span id="cb162-274"><a href="#cb162-274" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(lm.fit,<span class="at">lwd=</span><span class="dv">3</span>)</span>
-<span id="cb162-275"><a href="#cb162-275" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(lm.fit,<span class="at">lwd=</span><span class="dv">3</span>,<span class="at">col=</span><span class="st">"red"</span>)</span>
-<span id="cb162-276"><a href="#cb162-276" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(lstat,medv,<span class="at">col=</span><span class="st">"red"</span>)</span>
-<span id="cb162-277"><a href="#cb162-277" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(lstat,medv,<span class="at">pch=</span><span class="dv">16</span>)</span>
-<span id="cb162-278"><a href="#cb162-278" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(lstat,medv,<span class="at">pch=</span><span class="st">"+"</span>)</span>
-<span id="cb162-279"><a href="#cb162-279" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>,<span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>,<span class="at">pch=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>)</span>
-<span id="cb162-280"><a href="#cb162-280" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-281"><a href="#cb162-281" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">bg =</span> <span class="st">"#FCFCF6"</span>)</span>
-<span id="cb162-282"><a href="#cb162-282" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">2</span>))</span>
-<span id="cb162-283"><a href="#cb162-283" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(lm.fit)</span>
-<span id="cb162-284"><a href="#cb162-284" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-285"><a href="#cb162-285" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">bg =</span> <span class="st">"#FCFCF6"</span>) <span class="co"># set background color to match that of the website </span></span>
-<span id="cb162-286"><a href="#cb162-286" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">1</span>), <span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">15</span>,<span class="dv">1</span>,<span class="dv">15</span>)) <span class="co"># set margins and layout </span></span>
-<span id="cb162-287"><a href="#cb162-287" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">predict</span>(lm.fit), <span class="fu">residuals</span>(lm.fit))</span>
-<span id="cb162-288"><a href="#cb162-288" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">predict</span>(lm.fit), <span class="fu">rstudent</span>(lm.fit))</span>
-<span id="cb162-289"><a href="#cb162-289" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">hatvalues</span>(lm.fit))</span>
-<span id="cb162-290"><a href="#cb162-290" aria-hidden="true" tabindex="-1"></a><span class="fu">which.max</span>(<span class="fu">hatvalues</span>(lm.fit))</span>
-<span id="cb162-291"><a href="#cb162-291" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb162-292"><a href="#cb162-292" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-293"><a href="#cb162-293" aria-hidden="true" tabindex="-1"></a><span class="fu">### Multiple Linear Regression</span></span>
-<span id="cb162-294"><a href="#cb162-294" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-297"><a href="#cb162-297" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb162-298"><a href="#cb162-298" aria-hidden="true" tabindex="-1"></a>lm.fit<span class="ot">=</span><span class="fu">lm</span>(medv<span class="sc">~</span>lstat<span class="sc">+</span>age,<span class="at">data=</span>Boston)</span>
-<span id="cb162-299"><a href="#cb162-299" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lm.fit)</span>
-<span id="cb162-300"><a href="#cb162-300" aria-hidden="true" tabindex="-1"></a>lm.fit<span class="ot">=</span><span class="fu">lm</span>(medv<span class="sc">~</span>.,<span class="at">data=</span>Boston)</span>
-<span id="cb162-301"><a href="#cb162-301" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lm.fit)</span>
-<span id="cb162-302"><a href="#cb162-302" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(car)</span>
-<span id="cb162-303"><a href="#cb162-303" aria-hidden="true" tabindex="-1"></a><span class="fu">vif</span>(lm.fit)</span>
-<span id="cb162-304"><a href="#cb162-304" aria-hidden="true" tabindex="-1"></a>lm.fit1<span class="ot">=</span><span class="fu">lm</span>(medv<span class="sc">~</span>.<span class="sc">-</span>age,<span class="at">data=</span>Boston)</span>
-<span id="cb162-305"><a href="#cb162-305" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lm.fit1)</span>
-<span id="cb162-306"><a href="#cb162-306" aria-hidden="true" tabindex="-1"></a>lm.fit1<span class="ot">=</span><span class="fu">update</span>(lm.fit, <span class="sc">~</span>.<span class="sc">-</span>age)</span>
-<span id="cb162-307"><a href="#cb162-307" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb162-308"><a href="#cb162-308" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-309"><a href="#cb162-309" aria-hidden="true" tabindex="-1"></a><span class="fu">### Non-linear Transformations of the Predictors</span></span>
-<span id="cb162-310"><a href="#cb162-310" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-313"><a href="#cb162-313" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb162-314"><a href="#cb162-314" aria-hidden="true" tabindex="-1"></a>lm.fit2<span class="ot">=</span><span class="fu">lm</span>(medv<span class="sc">~</span>lstat<span class="sc">+</span><span class="fu">I</span>(lstat<span class="sc">^</span><span class="dv">2</span>))</span>
-<span id="cb162-315"><a href="#cb162-315" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lm.fit2)</span>
-<span id="cb162-316"><a href="#cb162-316" aria-hidden="true" tabindex="-1"></a>lm.fit<span class="ot">=</span><span class="fu">lm</span>(medv<span class="sc">~</span>lstat)</span>
-<span id="cb162-317"><a href="#cb162-317" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(lm.fit,lm.fit2)</span>
-<span id="cb162-318"><a href="#cb162-318" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">2</span>))</span>
-<span id="cb162-319"><a href="#cb162-319" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(lm.fit2)</span>
-<span id="cb162-320"><a href="#cb162-320" aria-hidden="true" tabindex="-1"></a>lm.fit5<span class="ot">=</span><span class="fu">lm</span>(medv<span class="sc">~</span><span class="fu">poly</span>(lstat,<span class="dv">5</span>))</span>
-<span id="cb162-321"><a href="#cb162-321" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lm.fit5)</span>
-<span id="cb162-322"><a href="#cb162-322" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">lm</span>(medv<span class="sc">~</span><span class="fu">log</span>(rm),<span class="at">data=</span>Boston))</span>
-<span id="cb162-323"><a href="#cb162-323" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb162-324"><a href="#cb162-324" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-325"><a href="#cb162-325" aria-hidden="true" tabindex="-1"></a><span class="fu">### Qualitative Predictors</span></span>
+<span id="cb162-143"><a href="#cb162-143" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">bg =</span> <span class="st">"#FCFCF6"</span>)</span>
+<span id="cb162-144"><a href="#cb162-144" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y,<span class="at">pch =</span> <span class="dv">20</span>, <span class="at">col =</span> <span class="st">"forestgreen"</span>) <span class="co"># Try different colors</span></span>
+<span id="cb162-145"><a href="#cb162-145" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y,<span class="at">pch =</span> <span class="dv">20</span>, <span class="at">col =</span> <span class="st">"indianred3"</span>) </span>
+<span id="cb162-146"><a href="#cb162-146" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y,<span class="at">pch =</span> <span class="dv">20</span>, <span class="at">col =</span> <span class="st">"paleturquoise3"</span>) </span>
+<span id="cb162-147"><a href="#cb162-147" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(x,y,<span class="at">pch =</span> <span class="dv">20</span>, <span class="at">col =</span> <span class="st">"plum4"</span>) </span>
+<span id="cb162-148"><a href="#cb162-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-149"><a href="#cb162-149" aria-hidden="true" tabindex="-1"></a><span class="co">#dev.off() # Close the file using the dev.off function</span></span>
+<span id="cb162-150"><a href="#cb162-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-151"><a href="#cb162-151" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">bg =</span> <span class="st">"#FCFCF6"</span>)</span>
+<span id="cb162-152"><a href="#cb162-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-153"><a href="#cb162-153" aria-hidden="true" tabindex="-1"></a>x1 <span class="ot">=</span> <span class="fu">seq</span>(<span class="dv">1</span>,<span class="dv">10</span>) <span class="co"># Same as x=c(1:10)</span></span>
+<span id="cb162-154"><a href="#cb162-154" aria-hidden="true" tabindex="-1"></a>x1</span>
+<span id="cb162-155"><a href="#cb162-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-156"><a href="#cb162-156" aria-hidden="true" tabindex="-1"></a>x2 <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span>
+<span id="cb162-157"><a href="#cb162-157" aria-hidden="true" tabindex="-1"></a>x2</span>
+<span id="cb162-158"><a href="#cb162-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-159"><a href="#cb162-159" aria-hidden="true" tabindex="-1"></a><span class="co"># x1 and x2 are the same</span></span>
+<span id="cb162-160"><a href="#cb162-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-161"><a href="#cb162-161" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="fu">seq</span>(<span class="sc">-</span>pi,pi,<span class="at">length =</span> <span class="dv">50</span>)</span>
+<span id="cb162-162"><a href="#cb162-162" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> x</span>
+<span id="cb162-163"><a href="#cb162-163" aria-hidden="true" tabindex="-1"></a>y</span>
+<span id="cb162-164"><a href="#cb162-164" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb162-165"><a href="#cb162-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-166"><a href="#cb162-166" aria-hidden="true" tabindex="-1"></a><span class="fu">## **LAB 02**</span></span>
+<span id="cb162-167"><a href="#cb162-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-168"><a href="#cb162-168" aria-hidden="true" tabindex="-1"></a><span class="fu">### R Programmng Basic Commands</span></span>
+<span id="cb162-169"><a href="#cb162-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-170"><a href="#cb162-170" aria-hidden="true" tabindex="-1"></a>(Adapted from ISLR Chapter 3 Lab: Introduction to R)</span>
+<span id="cb162-171"><a href="#cb162-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-172"><a href="#cb162-172" aria-hidden="true" tabindex="-1"></a><span class="fu">### Indexing Data using \[\]</span></span>
+<span id="cb162-173"><a href="#cb162-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-176"><a href="#cb162-176" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb162-177"><a href="#cb162-177" aria-hidden="true" tabindex="-1"></a>A<span class="ot">=</span><span class="fu">matrix</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">16</span>,<span class="dv">4</span>,<span class="dv">4</span>)</span>
+<span id="cb162-178"><a href="#cb162-178" aria-hidden="true" tabindex="-1"></a>A</span>
+<span id="cb162-179"><a href="#cb162-179" aria-hidden="true" tabindex="-1"></a>A[<span class="dv">2</span>,<span class="dv">3</span>]</span>
+<span id="cb162-180"><a href="#cb162-180" aria-hidden="true" tabindex="-1"></a>A[<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>),<span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">4</span>)]</span>
+<span id="cb162-181"><a href="#cb162-181" aria-hidden="true" tabindex="-1"></a>A[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>,<span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>]</span>
+<span id="cb162-182"><a href="#cb162-182" aria-hidden="true" tabindex="-1"></a>A[<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>,]</span>
+<span id="cb162-183"><a href="#cb162-183" aria-hidden="true" tabindex="-1"></a>A[,<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>]</span>
+<span id="cb162-184"><a href="#cb162-184" aria-hidden="true" tabindex="-1"></a>A[<span class="dv">1</span>,]</span>
+<span id="cb162-185"><a href="#cb162-185" aria-hidden="true" tabindex="-1"></a>A[<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>),]</span>
+<span id="cb162-186"><a href="#cb162-186" aria-hidden="true" tabindex="-1"></a>A[<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>),<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">4</span>)]</span>
+<span id="cb162-187"><a href="#cb162-187" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(A)</span>
+<span id="cb162-188"><a href="#cb162-188" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb162-189"><a href="#cb162-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-190"><a href="#cb162-190" aria-hidden="true" tabindex="-1"></a><span class="fu">### Loading Data from GitHub</span></span>
+<span id="cb162-191"><a href="#cb162-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-194"><a href="#cb162-194" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb162-195"><a href="#cb162-195" aria-hidden="true" tabindex="-1"></a>Auto<span class="ot">=</span><span class="fu">read.table</span>(<span class="st">"https://raw.githubusercontent.com/karlho/knowledgemining/gh-pages/data/Auto.data"</span>)</span>
+<span id="cb162-196"><a href="#cb162-196" aria-hidden="true" tabindex="-1"></a><span class="co"># fix(Auto) # Starting the X11 R data editor</span></span>
+<span id="cb162-197"><a href="#cb162-197" aria-hidden="true" tabindex="-1"></a>Auto<span class="ot">=</span><span class="fu">read.table</span>(<span class="st">"https://raw.githubusercontent.com/karlho/knowledgemining/gh-pages/data/Auto.data"</span>,<span class="at">header=</span>T,<span class="at">na.strings=</span><span class="st">"?"</span>)</span>
+<span id="cb162-198"><a href="#cb162-198" aria-hidden="true" tabindex="-1"></a><span class="co"># fix(Auto)</span></span>
+<span id="cb162-199"><a href="#cb162-199" aria-hidden="true" tabindex="-1"></a>Auto<span class="ot">=</span><span class="fu">read.csv</span>(<span class="st">"https://raw.githubusercontent.com/karlho/knowledgemining/gh-pages/data/Auto.csv"</span>,<span class="at">header=</span>T,<span class="at">na.strings=</span><span class="st">"?"</span>)</span>
+<span id="cb162-200"><a href="#cb162-200" aria-hidden="true" tabindex="-1"></a><span class="co"># fix(Auto)</span></span>
+<span id="cb162-201"><a href="#cb162-201" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(Auto)</span>
+<span id="cb162-202"><a href="#cb162-202" aria-hidden="true" tabindex="-1"></a>Auto[<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>,]</span>
+<span id="cb162-203"><a href="#cb162-203" aria-hidden="true" tabindex="-1"></a>Auto<span class="ot">=</span><span class="fu">na.omit</span>(Auto)</span>
+<span id="cb162-204"><a href="#cb162-204" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(Auto)</span>
+<span id="cb162-205"><a href="#cb162-205" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(Auto)</span>
+<span id="cb162-206"><a href="#cb162-206" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb162-207"><a href="#cb162-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-208"><a href="#cb162-208" aria-hidden="true" tabindex="-1"></a><span class="fu">### Load data from ISLR website</span></span>
+<span id="cb162-209"><a href="#cb162-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-210"><a href="#cb162-210" aria-hidden="true" tabindex="-1"></a><span class="in">```{r Loaddata_from_web}</span></span>
+<span id="cb162-211"><a href="#cb162-211" aria-hidden="true" tabindex="-1"></a>Auto<span class="ot">=</span><span class="fu">read.table</span>(<span class="st">"https://www.statlearning.com/s/Auto.data"</span>,<span class="at">header=</span>T,<span class="at">na.strings=</span><span class="st">"?"</span>)</span>
+<span id="cb162-212"><a href="#cb162-212" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(Auto)</span>
+<span id="cb162-213"><a href="#cb162-213" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb162-214"><a href="#cb162-214" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-215"><a href="#cb162-215" aria-hidden="true" tabindex="-1"></a><span class="fu">### Additional Graphical and Numerical Summaries</span></span>
+<span id="cb162-216"><a href="#cb162-216" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-219"><a href="#cb162-219" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb162-220"><a href="#cb162-220" aria-hidden="true" tabindex="-1"></a><span class="co"># plot(cylinders, mpg)</span></span>
+<span id="cb162-221"><a href="#cb162-221" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">bg =</span> <span class="st">"#FCFCF6"</span>)</span>
+<span id="cb162-222"><a href="#cb162-222" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(Auto<span class="sc">$</span>cylinders, Auto<span class="sc">$</span>mpg)</span>
+<span id="cb162-223"><a href="#cb162-223" aria-hidden="true" tabindex="-1"></a><span class="fu">attach</span>(Auto)</span>
+<span id="cb162-224"><a href="#cb162-224" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(cylinders, mpg)</span>
+<span id="cb162-225"><a href="#cb162-225" aria-hidden="true" tabindex="-1"></a>cylinders<span class="ot">=</span><span class="fu">as.factor</span>(cylinders)</span>
+<span id="cb162-226"><a href="#cb162-226" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(cylinders, mpg)</span>
+<span id="cb162-227"><a href="#cb162-227" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(cylinders, mpg, <span class="at">col=</span><span class="st">"red"</span>)</span>
+<span id="cb162-228"><a href="#cb162-228" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(cylinders, mpg, <span class="at">col=</span><span class="st">"red"</span>, <span class="at">varwidth=</span>T)</span>
+<span id="cb162-229"><a href="#cb162-229" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(cylinders, mpg, <span class="at">col=</span><span class="st">"red"</span>, <span class="at">varwidth=</span>T,<span class="at">horizontal=</span>T)</span>
+<span id="cb162-230"><a href="#cb162-230" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(cylinders, mpg, <span class="at">col=</span><span class="st">"red"</span>, <span class="at">varwidth=</span>T, <span class="at">xlab=</span><span class="st">"cylinders"</span>, <span class="at">ylab=</span><span class="st">"MPG"</span>)</span>
+<span id="cb162-231"><a href="#cb162-231" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(mpg)</span>
+<span id="cb162-232"><a href="#cb162-232" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(mpg,<span class="at">col=</span><span class="dv">2</span>)</span>
+<span id="cb162-233"><a href="#cb162-233" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(mpg,<span class="at">col=</span><span class="dv">2</span>,<span class="at">breaks=</span><span class="dv">15</span>)</span>
+<span id="cb162-234"><a href="#cb162-234" aria-hidden="true" tabindex="-1"></a><span class="co">#pairs(Auto)</span></span>
+<span id="cb162-235"><a href="#cb162-235" aria-hidden="true" tabindex="-1"></a><span class="fu">pairs</span>(<span class="sc">~</span> mpg <span class="sc">+</span> displacement <span class="sc">+</span> horsepower <span class="sc">+</span> weight <span class="sc">+</span> acceleration, Auto)</span>
+<span id="cb162-236"><a href="#cb162-236" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(horsepower,mpg)</span>
+<span id="cb162-237"><a href="#cb162-237" aria-hidden="true" tabindex="-1"></a><span class="co"># identify(horsepower,mpg,name) # Interactive: point and click the dot to identify cases</span></span>
+<span id="cb162-238"><a href="#cb162-238" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(Auto)</span>
+<span id="cb162-239"><a href="#cb162-239" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(mpg)</span>
+<span id="cb162-240"><a href="#cb162-240" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb162-241"><a href="#cb162-241" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-242"><a href="#cb162-242" aria-hidden="true" tabindex="-1"></a><span class="fu">### Linear Regression</span></span>
+<span id="cb162-243"><a href="#cb162-243" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-246"><a href="#cb162-246" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb162-247"><a href="#cb162-247" aria-hidden="true" tabindex="-1"></a>ptbu<span class="ot">=</span><span class="fu">c</span>(<span class="st">"MASS"</span>,<span class="st">"ISLR"</span>)</span>
+<span id="cb162-248"><a href="#cb162-248" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(ptbu, <span class="at">repos=</span><span class="st">'http://cran.us.r-project.org'</span>)</span>
+<span id="cb162-249"><a href="#cb162-249" aria-hidden="true" tabindex="-1"></a><span class="fu">lapply</span>(ptbu, require, <span class="at">character.only =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb162-250"><a href="#cb162-250" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(MASS)</span>
+<span id="cb162-251"><a href="#cb162-251" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ISLR)</span>
+<span id="cb162-252"><a href="#cb162-252" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-253"><a href="#cb162-253" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">bg =</span> <span class="st">"#FCFCF6"</span>)</span>
+<span id="cb162-254"><a href="#cb162-254" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-255"><a href="#cb162-255" aria-hidden="true" tabindex="-1"></a><span class="co"># Simple Linear Regression</span></span>
+<span id="cb162-256"><a href="#cb162-256" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-257"><a href="#cb162-257" aria-hidden="true" tabindex="-1"></a><span class="co"># fix(Boston)</span></span>
+<span id="cb162-258"><a href="#cb162-258" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(Boston)</span>
+<span id="cb162-259"><a href="#cb162-259" aria-hidden="true" tabindex="-1"></a><span class="co"># lm.fit=lm(medv~lstat)</span></span>
+<span id="cb162-260"><a href="#cb162-260" aria-hidden="true" tabindex="-1"></a><span class="fu">attach</span>(Boston)</span>
+<span id="cb162-261"><a href="#cb162-261" aria-hidden="true" tabindex="-1"></a>lm.fit<span class="ot">=</span><span class="fu">lm</span>(medv<span class="sc">~</span>lstat,<span class="at">data=</span>Boston)</span>
+<span id="cb162-262"><a href="#cb162-262" aria-hidden="true" tabindex="-1"></a><span class="fu">attach</span>(Boston)</span>
+<span id="cb162-263"><a href="#cb162-263" aria-hidden="true" tabindex="-1"></a>lm.fit<span class="ot">=</span><span class="fu">lm</span>(medv<span class="sc">~</span>lstat)</span>
+<span id="cb162-264"><a href="#cb162-264" aria-hidden="true" tabindex="-1"></a>lm.fit</span>
+<span id="cb162-265"><a href="#cb162-265" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lm.fit)</span>
+<span id="cb162-266"><a href="#cb162-266" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(lm.fit)</span>
+<span id="cb162-267"><a href="#cb162-267" aria-hidden="true" tabindex="-1"></a><span class="fu">coef</span>(lm.fit)</span>
+<span id="cb162-268"><a href="#cb162-268" aria-hidden="true" tabindex="-1"></a><span class="fu">confint</span>(lm.fit)</span>
+<span id="cb162-269"><a href="#cb162-269" aria-hidden="true" tabindex="-1"></a><span class="fu">predict</span>(lm.fit,<span class="fu">data.frame</span>(<span class="at">lstat=</span>(<span class="fu">c</span>(<span class="dv">5</span>,<span class="dv">10</span>,<span class="dv">15</span>))), <span class="at">interval=</span><span class="st">"confidence"</span>)</span>
+<span id="cb162-270"><a href="#cb162-270" aria-hidden="true" tabindex="-1"></a><span class="fu">predict</span>(lm.fit,<span class="fu">data.frame</span>(<span class="at">lstat=</span>(<span class="fu">c</span>(<span class="dv">5</span>,<span class="dv">10</span>,<span class="dv">15</span>))), <span class="at">interval=</span><span class="st">"prediction"</span>)</span>
+<span id="cb162-271"><a href="#cb162-271" aria-hidden="true" tabindex="-1"></a><span class="co"># What is the differnce between "conference" and "prediction" difference?</span></span>
+<span id="cb162-272"><a href="#cb162-272" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-273"><a href="#cb162-273" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(lstat,medv)</span>
+<span id="cb162-274"><a href="#cb162-274" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(lm.fit)</span>
+<span id="cb162-275"><a href="#cb162-275" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(lm.fit,<span class="at">lwd=</span><span class="dv">3</span>)</span>
+<span id="cb162-276"><a href="#cb162-276" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(lm.fit,<span class="at">lwd=</span><span class="dv">3</span>,<span class="at">col=</span><span class="st">"red"</span>)</span>
+<span id="cb162-277"><a href="#cb162-277" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(lstat,medv,<span class="at">col=</span><span class="st">"red"</span>)</span>
+<span id="cb162-278"><a href="#cb162-278" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(lstat,medv,<span class="at">pch=</span><span class="dv">16</span>)</span>
+<span id="cb162-279"><a href="#cb162-279" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(lstat,medv,<span class="at">pch=</span><span class="st">"+"</span>)</span>
+<span id="cb162-280"><a href="#cb162-280" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>,<span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>,<span class="at">pch=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>)</span>
+<span id="cb162-281"><a href="#cb162-281" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-282"><a href="#cb162-282" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">bg =</span> <span class="st">"#FCFCF6"</span>)</span>
+<span id="cb162-283"><a href="#cb162-283" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">2</span>))</span>
+<span id="cb162-284"><a href="#cb162-284" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(lm.fit)</span>
+<span id="cb162-285"><a href="#cb162-285" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-286"><a href="#cb162-286" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">bg =</span> <span class="st">"#FCFCF6"</span>) <span class="co"># set background color to match that of the website </span></span>
+<span id="cb162-287"><a href="#cb162-287" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">1</span>), <span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">15</span>,<span class="dv">1</span>,<span class="dv">15</span>)) <span class="co"># set margins and layout </span></span>
+<span id="cb162-288"><a href="#cb162-288" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">predict</span>(lm.fit), <span class="fu">residuals</span>(lm.fit))</span>
+<span id="cb162-289"><a href="#cb162-289" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">predict</span>(lm.fit), <span class="fu">rstudent</span>(lm.fit))</span>
+<span id="cb162-290"><a href="#cb162-290" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">hatvalues</span>(lm.fit))</span>
+<span id="cb162-291"><a href="#cb162-291" aria-hidden="true" tabindex="-1"></a><span class="fu">which.max</span>(<span class="fu">hatvalues</span>(lm.fit))</span>
+<span id="cb162-292"><a href="#cb162-292" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb162-293"><a href="#cb162-293" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-294"><a href="#cb162-294" aria-hidden="true" tabindex="-1"></a><span class="fu">### Multiple Linear Regression</span></span>
+<span id="cb162-295"><a href="#cb162-295" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-298"><a href="#cb162-298" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb162-299"><a href="#cb162-299" aria-hidden="true" tabindex="-1"></a>lm.fit<span class="ot">=</span><span class="fu">lm</span>(medv<span class="sc">~</span>lstat<span class="sc">+</span>age,<span class="at">data=</span>Boston)</span>
+<span id="cb162-300"><a href="#cb162-300" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lm.fit)</span>
+<span id="cb162-301"><a href="#cb162-301" aria-hidden="true" tabindex="-1"></a>lm.fit<span class="ot">=</span><span class="fu">lm</span>(medv<span class="sc">~</span>.,<span class="at">data=</span>Boston)</span>
+<span id="cb162-302"><a href="#cb162-302" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lm.fit)</span>
+<span id="cb162-303"><a href="#cb162-303" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(car)</span>
+<span id="cb162-304"><a href="#cb162-304" aria-hidden="true" tabindex="-1"></a><span class="fu">vif</span>(lm.fit)</span>
+<span id="cb162-305"><a href="#cb162-305" aria-hidden="true" tabindex="-1"></a>lm.fit1<span class="ot">=</span><span class="fu">lm</span>(medv<span class="sc">~</span>.<span class="sc">-</span>age,<span class="at">data=</span>Boston)</span>
+<span id="cb162-306"><a href="#cb162-306" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lm.fit1)</span>
+<span id="cb162-307"><a href="#cb162-307" aria-hidden="true" tabindex="-1"></a>lm.fit1<span class="ot">=</span><span class="fu">update</span>(lm.fit, <span class="sc">~</span>.<span class="sc">-</span>age)</span>
+<span id="cb162-308"><a href="#cb162-308" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb162-309"><a href="#cb162-309" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-310"><a href="#cb162-310" aria-hidden="true" tabindex="-1"></a><span class="fu">### Non-linear Transformations of the Predictors</span></span>
+<span id="cb162-311"><a href="#cb162-311" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-314"><a href="#cb162-314" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb162-315"><a href="#cb162-315" aria-hidden="true" tabindex="-1"></a>lm.fit2<span class="ot">=</span><span class="fu">lm</span>(medv<span class="sc">~</span>lstat<span class="sc">+</span><span class="fu">I</span>(lstat<span class="sc">^</span><span class="dv">2</span>))</span>
+<span id="cb162-316"><a href="#cb162-316" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lm.fit2)</span>
+<span id="cb162-317"><a href="#cb162-317" aria-hidden="true" tabindex="-1"></a>lm.fit<span class="ot">=</span><span class="fu">lm</span>(medv<span class="sc">~</span>lstat)</span>
+<span id="cb162-318"><a href="#cb162-318" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(lm.fit,lm.fit2)</span>
+<span id="cb162-319"><a href="#cb162-319" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">2</span>))</span>
+<span id="cb162-320"><a href="#cb162-320" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">bg =</span> <span class="st">"#FCFCF6"</span>)</span>
+<span id="cb162-321"><a href="#cb162-321" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(lm.fit2)</span>
+<span id="cb162-322"><a href="#cb162-322" aria-hidden="true" tabindex="-1"></a>lm.fit5<span class="ot">=</span><span class="fu">lm</span>(medv<span class="sc">~</span><span class="fu">poly</span>(lstat,<span class="dv">5</span>))</span>
+<span id="cb162-323"><a href="#cb162-323" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lm.fit5)</span>
+<span id="cb162-324"><a href="#cb162-324" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">lm</span>(medv<span class="sc">~</span><span class="fu">log</span>(rm),<span class="at">data=</span>Boston))</span>
+<span id="cb162-325"><a href="#cb162-325" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb162-326"><a href="#cb162-326" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-329"><a href="#cb162-329" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb162-330"><a href="#cb162-330" aria-hidden="true" tabindex="-1"></a><span class="co"># fix(Carseats)</span></span>
-<span id="cb162-331"><a href="#cb162-331" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(Carseats)</span>
-<span id="cb162-332"><a href="#cb162-332" aria-hidden="true" tabindex="-1"></a>lm.fit<span class="ot">=</span><span class="fu">lm</span>(Sales<span class="sc">~</span>.<span class="sc">+</span>Income<span class="sc">:</span>Advertising<span class="sc">+</span>Price<span class="sc">:</span>Age,<span class="at">data=</span>Carseats)</span>
-<span id="cb162-333"><a href="#cb162-333" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lm.fit)</span>
-<span id="cb162-334"><a href="#cb162-334" aria-hidden="true" tabindex="-1"></a><span class="fu">attach</span>(Carseats)</span>
-<span id="cb162-335"><a href="#cb162-335" aria-hidden="true" tabindex="-1"></a><span class="fu">contrasts</span>(ShelveLoc)</span>
-<span id="cb162-336"><a href="#cb162-336" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb162-337"><a href="#cb162-337" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-338"><a href="#cb162-338" aria-hidden="true" tabindex="-1"></a><span class="fu">### Interaction Terms (including interaction and single effects)</span></span>
+<span id="cb162-327"><a href="#cb162-327" aria-hidden="true" tabindex="-1"></a><span class="fu">### Qualitative Predictors</span></span>
+<span id="cb162-328"><a href="#cb162-328" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-331"><a href="#cb162-331" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb162-332"><a href="#cb162-332" aria-hidden="true" tabindex="-1"></a><span class="co"># fix(Carseats)</span></span>
+<span id="cb162-333"><a href="#cb162-333" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(Carseats)</span>
+<span id="cb162-334"><a href="#cb162-334" aria-hidden="true" tabindex="-1"></a>lm.fit<span class="ot">=</span><span class="fu">lm</span>(Sales<span class="sc">~</span>.<span class="sc">+</span>Income<span class="sc">:</span>Advertising<span class="sc">+</span>Price<span class="sc">:</span>Age,<span class="at">data=</span>Carseats)</span>
+<span id="cb162-335"><a href="#cb162-335" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(lm.fit)</span>
+<span id="cb162-336"><a href="#cb162-336" aria-hidden="true" tabindex="-1"></a><span class="fu">attach</span>(Carseats)</span>
+<span id="cb162-337"><a href="#cb162-337" aria-hidden="true" tabindex="-1"></a><span class="fu">contrasts</span>(ShelveLoc)</span>
+<span id="cb162-338"><a href="#cb162-338" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb162-339"><a href="#cb162-339" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb162-342"><a href="#cb162-342" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb162-343"><a href="#cb162-343" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">lm</span>(medv<span class="sc">~</span>lstat<span class="sc">*</span>age,<span class="at">data=</span>Boston))</span>
-<span id="cb162-344"><a href="#cb162-344" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb162-340"><a href="#cb162-340" aria-hidden="true" tabindex="-1"></a><span class="fu">### Interaction Terms (including interaction and single effects)</span></span>
+<span id="cb162-341"><a href="#cb162-341" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb162-344"><a href="#cb162-344" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb162-345"><a href="#cb162-345" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(<span class="fu">lm</span>(medv<span class="sc">~</span>lstat<span class="sc">*</span>age,<span class="at">data=</span>Boston))</span>
+<span id="cb162-346"><a href="#cb162-346" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

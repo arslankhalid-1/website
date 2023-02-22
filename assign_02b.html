@@ -92,7 +92,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./assign_03.qmd" rel="next">
+<link href="./lab_03.html" rel="next">
 <link href="./assign_02.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -199,11 +199,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
       </ul>
   </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Assingment 3</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./assign_03.qmd" class="sidebar-item-text sidebar-link">Assignment 3</a>
+  <a href="./lab_03.html" class="sidebar-item-text sidebar-link">Lab 03</a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./assign_03.html" class="sidebar-item-text sidebar-link">Data Analysis</a>
+  </div>
+</li>
+      </ul>
+  </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./assign_04.qmd" class="sidebar-item-text sidebar-link">Assignment 4</a>
@@ -213,12 +228,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">About</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">About</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./CV_Arslan_Khalid_2022.pdf" class="sidebar-item-text sidebar-link">Resume</a>
@@ -326,7 +341,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="assign_02b_files/figure-html/unnamed-chunk-2-3.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>The figure above shows the most frequent interactions of missing variables. The next step is to see if there is a pattern here and if that affects our analysis in any way. We could consider removing rows that are completely missing. Alternatively, we could choose to drop rows that contain “NA”. This is shown below.</p>
+<p>The figure above shows the most frequent interactions of missing variables in the data. The next step is to see if there is a pattern here and if that affects our analysis in any way. We could consider removing rows that are completely missing. Alternatively, we could choose to drop rows that contain “NA”. This is shown below.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("tidyr")</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"tidyr"</span>)</span>
@@ -620,8 +635,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./assign_03.qmd" class="pagination-link">
-        <span class="nav-page-text">Assignment 3</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./lab_03.html" class="pagination-link">
+        <span class="nav-page-text">Lab 03</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
@@ -671,7 +686,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb21-48"><a href="#cb21-48" aria-hidden="true" tabindex="-1"></a><span class="fu">gg_miss_upset</span>(TEDS_2016, <span class="at">nsets =</span> <span class="fu">n_var_miss</span>(TEDS_2016)) </span>
 <span id="cb21-49"><a href="#cb21-49" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb21-50"><a href="#cb21-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-51"><a href="#cb21-51" aria-hidden="true" tabindex="-1"></a>The figure above shows the most frequent interactions of missing variables. The next step is to see if there is a pattern here and if that affects our analysis in any way. We could consider removing rows that are completely missing. Alternatively, we could choose to drop rows that contain "NA". This is shown below.</span>
+<span id="cb21-51"><a href="#cb21-51" aria-hidden="true" tabindex="-1"></a>The figure above shows the most frequent interactions of missing variables in the data. The next step is to see if there is a pattern here and if that affects our analysis in any way. We could consider removing rows that are completely missing. Alternatively, we could choose to drop rows that contain "NA". This is shown below.</span>
 <span id="cb21-52"><a href="#cb21-52" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb21-55"><a href="#cb21-55" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb21-56"><a href="#cb21-56" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("tidyr")</span></span>
@@ -719,7 +734,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb21-100"><a href="#cb21-100" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb21-101"><a href="#cb21-101" aria-hidden="true" tabindex="-1"></a><span class="sc">\-\-\-\-\-\-\-</span>-</span>
 <span id="cb21-102"><a href="#cb21-102" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-103"><a href="#cb21-103" aria-hidden="true" tabindex="-1"></a><span class="fu">## Class Notes </span></span>
+<span id="cb21-103"><a href="#cb21-103" aria-hidden="true" tabindex="-1"></a><span class="fu">## Class Notes</span></span>
 <span id="cb21-104"><a href="#cb21-104" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb21-105"><a href="#cb21-105" aria-hidden="true" tabindex="-1"></a><span class="fu">###### **February 15, 2023**</span></span>
 <span id="cb21-106"><a href="#cb21-106" aria-hidden="true" tabindex="-1"></a></span>
